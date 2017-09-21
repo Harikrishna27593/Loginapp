@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>Successful Login</title>
+	</head>
+	<body>
+		<div class="container">
+			
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1 class="title" style="color:#0059b3;">Logged_in Successfully</h1>
+	               		<hr />
+	               	</div>
+	            </div>
+				
+				
+				      <table class="table table-bordered table table-hover table table-striped">
+                          <thead class="thead-inverse" >
+                          <tr>
+                           
+                            <th>FIRST_NAME</th>
+                            <th>LAST_NAME</th>
+                            <th>DATE_OF_BIRTH</th>
+                            <th>GENDER</th>
+                          </tr>
+                          </thead>
+                   <% if(data.length){ 
+                       for(var i = 0;i < data.length;i++) { %>
+                       <tbody>
+                           <tr>
+                             
+                             <td><%=data[i].FIRST_NAME%></td>
+                             <td><%=data[i].LAST_NAME%></td>
+                             <td><%=data[i].DOB.toDateString()%></td>
+                             <td><%=data[i].GENDER%></td>
+                           </tr>
+                           
+                   <% }
+                   }else{ %>
+                          <tr>
+                        <td colspan="4">No user</td>
+                           </tr>
+                         
+                   <% } %>
+                   </tbody>
+                   </table>
+                   <a href="/signin" align="center"><h4 style="color:#0059b3;">Logout</h4></a>
+				</div>
+				
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
