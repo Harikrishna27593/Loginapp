@@ -1,5 +1,5 @@
-# Loginapp
-User can sign_up,sign_in on this app made using NodeJS , ExpressJS, MySQL and when signed in it lists the user details.
+# Login_signup_Template
+User can sign_up,sign_in on this app made using NodeJS , ExpressJS, MySQL and when signed in, it lists the signed-in user's details.
 
 To Run
 =================
@@ -10,3 +10,5 @@ Followed by<br/>
 npm install<br/>
 
 Run the Node Application.<br/>
+
+
